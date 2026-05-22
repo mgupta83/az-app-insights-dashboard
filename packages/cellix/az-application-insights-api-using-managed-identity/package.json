@@ -1,0 +1,17 @@
+{
+  "name": "@cellix/az-application-insights-api-using-managed-identity",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "lint": "eslint src --ext .ts"
+  },
+  "dependencies": {
+    "@azure/core-auth": "^1.10.1",
+    "@azure/identity": "^4.13.0"
+  }
+}
