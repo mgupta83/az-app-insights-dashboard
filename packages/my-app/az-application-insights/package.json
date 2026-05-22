@@ -1,0 +1,19 @@
+{
+  "name": "@my-app/az-application-insights",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "lint": "eslint src --ext .ts",
+    "test": "vitest run src/index.test.ts"
+  },
+  "dependencies": {
+    "@azure/identity": "^4.13.0",
+    "@azure/storage-blob": "^12.29.1",
+    "@cellix/az-application-insights-api-using-managed-identity": "file:../../cellix/az-application-insights-api-using-managed-identity"
+  }
+}
